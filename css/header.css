@@ -1,0 +1,87 @@
+.header {
+    padding-top: 40px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 67px;
+    font-family: 'Montserrat Semibold';
+}
+
+.header__title--small-text {
+    display: block;
+    font-size: 30px;
+    font-family: 'Montserrat Regular';
+}
+
+.header__feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__feedback-link {
+    display: block;
+    margin-left: 20px;  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header__feedback-link--phone {
+    background-image: url("../img/phone.png");
+    width: 35px;
+    height: 35px;
+}
+
+.header__feedback-link--mail {
+    background-image: url("../img/gmail.png");
+    width: 40px;
+    height: 40px;
+}
+
+.header__feedback-link--tgm {
+    background-image: url("../img/tgm.png");
+    width: 46px;
+    height: 46px;
+}
+
+.header__nav {
+    padding-top: 30px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__item {
+    display: block;
+    width: 100%;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid  #004a6d;
+}
+
+.header__item .active {
+    background-color:  #004a6d;
+}
+
+.header__item:first-child {
+    border-left: none;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+.header__link {
+    display: block;
+    padding: 24px 0;
+    font-size: 24px;
+}
