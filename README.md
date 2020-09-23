@@ -1,2 +1,2 @@
 # ShuzSmiling.github.io
- portfolio site
+design by Alena 4ernoray -> https://www.behance.net/tangerinylcat
