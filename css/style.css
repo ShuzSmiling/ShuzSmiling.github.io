@@ -32,7 +32,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-width: 320px;
     font-family: 'Montserrat Regular';
     background-color: #0F0F0F;
@@ -67,8 +68,9 @@ img {
     width: 144px;
     height: 1080px;
     top: 0;
-    left: -32px;
+    left: 0;
 }
+
 .bg-right {
     background-image: url("../img/rightImg.png");
     position: fixed;
@@ -76,5 +78,5 @@ img {
     width: 264px;
     height: 1080px;
     top: 0;
-    right: -104px;
+    right: 0;
 }

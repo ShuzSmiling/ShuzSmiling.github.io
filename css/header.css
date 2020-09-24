@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     padding-top: 40px;
 }
 
@@ -20,13 +21,13 @@
 
 .header__feedback {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .header__feedback-link {
     display: block;
-    margin-left: 20px;  
+    margin-left: 20px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -64,11 +65,11 @@
     width: 100%;
     margin-right: 20px;
     text-align: center;
-    border: 1px solid  #004a6d;
+    border: 1px solid #004a6d;
 }
 
 .header__item .active {
-    background-color:  #004a6d;
+    background-color: #004a6d;
 }
 
 .header__item:first-child {
@@ -84,4 +85,107 @@
     display: block;
     padding: 24px 0;
     font-size: 24px;
+}
+
+@media (max-width: 1599px) {
+    .header {
+        z-index: 10;
+    }
+    .header__item .active {
+        background-color: #004a6dbd;
+    }
+}
+
+@media (max-width: 1279px) {
+    .header__title {
+        font-size: 60px;
+    }
+    .header__title--small-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 980px) {
+    .header__container {
+        flex-direction: column;
+    }
+    .header__feedback-link:first-child {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 794px) {
+    .header__title {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+    .header__title--small-text {
+        font-size: 20px;
+    }
+    .header__link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .header__title {
+        font-size: 35px;
+    }
+    .header__title--small-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 504px) {
+    .header__title {
+        font-size: 30px;
+    }
+    .header__title--small-text {
+        font-size: 20px;
+    }
+    .header__feedback-link--phone {
+        background-image: url("../img/phone.png");
+        width: 30px;
+        height: 30px;
+    }
+    .header__feedback-link--mail {
+        background-image: url("../img/gmail.png");
+        width: 35px;
+        height: 35px;
+    }
+    .header__feedback-link--tgm {
+        background-image: url("../img/tgm.png");
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 447px) {
+    .header__title {
+        font-size: 25px;
+    }
+    .header__title--small-text {
+        font-size: 15px;
+    }
+    .header__link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 389px) {
+    .header__title {
+        font-size: 20px;
+    }
+    .header__title--small-text {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 331px) {
+    .header__title {
+        font-size: 17px;
+    }
+    .header__title--small-text {
+        font-size: 11px;
+    }
 }
