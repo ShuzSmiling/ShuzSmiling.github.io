@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 10;
     padding-top: 40px;
 }
 
@@ -112,6 +113,9 @@
     .header__feedback-link:first-child {
         margin-left: 0;
     }
+    .header__title--small-text {
+        padding-top: 10px;
+    }
 }
 
 @media (max-width: 794px) {
@@ -161,12 +165,6 @@
 }
 
 @media (max-width: 447px) {
-    .header__title {
-        font-size: 25px;
-    }
-    .header__title--small-text {
-        font-size: 15px;
-    }
     .header__link {
         font-size: 15px;
     }
@@ -174,18 +172,18 @@
 
 @media (max-width: 389px) {
     .header__title {
-        font-size: 20px;
+        font-size: 25px;
     }
     .header__title--small-text {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 
 @media(max-width: 331px) {
     .header__title {
-        font-size: 17px;
+        font-size: 22px;
     }
     .header__title--small-text {
-        font-size: 11px;
+        font-size: 15px;
     }
 }

@@ -69,6 +69,7 @@ img {
     height: 1080px;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .bg-right {
@@ -79,4 +80,17 @@ img {
     height: 1080px;
     top: 0;
     right: 0;
+    z-index: 2;
+}
+
+@media (max-width: 1600px) {
+    .bg-right {
+        right: -7%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .bg-left, .bg-right {
+        opacity: 0.5;
+    }
 }
