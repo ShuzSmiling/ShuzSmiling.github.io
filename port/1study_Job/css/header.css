@@ -1,0 +1,306 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* темный блок */
+
+.header-top {
+    padding: 20px 0;
+    background-color: #00122f;
+    color: #fff;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.header-top__news {
+    font-weight: 400;
+}
+
+
+/* логотип, город и т.д. */
+
+.header-central {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 37px;
+}
+
+.header-central img {
+    width: 115px;
+    height: 38px;
+}
+
+.header-central-props {
+    margin-left: 62px;
+}
+
+.city {
+    margin-right: 50px;
+    position: relative;
+    color: #8fbae0;
+}
+
+.city span {
+    text-decoration: underline;
+}
+
+.city::after {
+    content: "";
+    background-image: url("../img/down-arrow.jpg");
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -18px;
+    top: 7px;
+}
+
+.day {
+    color: #91919f;
+    font-weight: 400;
+    line-height: 50px;
+    margin-right: 32px;
+}
+
+.header-time {
+    color: #91919f;
+    font-weight: 400;
+    background-image: url("../img/icon_clock.png");
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    margin-right: 31px;
+}
+
+.weather {
+    color: #91919f;
+    font-weight: 400;
+    background-image: url("../img/icon_cloudy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 35px;
+    margin-right: 47px;
+}
+
+
+/* Поиск */
+
+.header-search {
+    vertical-align: top;
+    line-height: 3;
+    position: relative;
+}
+
+.header-search input {
+    width: 266.6px;
+    height: 45px;
+    border-radius: 23px;
+    border: none;
+    background-color: #ebebeb;
+    padding: 0 21px;
+}
+
+.header-search input::placeholder {
+    padding: 16px 10px 16px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-search button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-image: url("../img/icon_search.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: inherit;
+    border: none;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* Меню в шапке */
+
+.header-nav {
+    padding-bottom: 25px;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: baseline;
+}
+
+.header-nav ul li {
+    margin-right: 15px;
+}
+
+.header-nav ul li:after {
+    content: "/";
+    padding-left: 15px;
+    color: #91919f;
+    font-size: 20px;
+}
+
+.header-nav ul li:last-child:after {
+    content: none;
+}
+
+.header-nav ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.logo_mobile {
+    display: none;
+}
+
+.header-bottom_mobile .container {
+    display: none;
+}
+
+
+/* Медиа запросы */
+
+@media (max-width: 980px) {
+    .day,
+    .header-time {
+        display: none;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-central {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .nav-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('https://www.apunis.it/brand/apunis/img/ico/android_menu.png');
+        background-size: contain;
+    }
+    .active {
+        display: block;
+    }
+    .close {
+        background-image: url('https://lesdomtorg.ru/assets/images/panorama/images/close3.png');
+    }
+    .header-central-props {
+        margin-left: 0;
+    }
+    .weather {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-search input {
+        display: none;
+    }
+    .header-search button {
+        position: initial;
+    }
+    .header-nav ul {
+        flex-direction: column;
+        align-items: end;
+    }
+    .header-nav ul li {
+        margin-right: 0;
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .header-nav ul li a {
+        display: block;
+        padding: 12px 0;
+    }
+    .header-nav ul li:after {
+        display: none;
+    }
+}
+
+@media (max-width: 545px) {
+    /* Шапка темная */
+    .datetime {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .logo_mobile {
+        display: block;
+    }
+    .header-central img {
+        width: 100%;
+        height: auto;
+    }
+    .header-central-props {
+        display: none;
+    }
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+    .header-search button {
+        height: 18px;
+        width: 18px;
+        display: block;
+    }
+    .header-bottom_mobile .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-bottom_mobile time {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Шапка темная */
+    .header-top h1,
+    .header-top a {
+        font-size: 14px;
+    }
+    .header-bottom_mobile time,
+    .header-bottom_mobile span {
+        font-size: 13px;
+        margin-right: 18px;
+    }
+}
+
+@media (max-width: 332px) {
+    /* Шапка темная */
+    .header-top h1,
+    .header-top a {
+        font-size: 13px;
+    }
+    .header-bottom_mobile time,
+    .header-bottom_mobile span {
+        font-size: 13px;
+        margin-right: 14px;
+    }
+}
